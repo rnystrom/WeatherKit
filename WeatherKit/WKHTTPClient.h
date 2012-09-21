@@ -1,13 +1,13 @@
 //
-//  WeatherKit.h
+//  WKHTTPClient.h
 //  WeatherKit
 //
 //  Created by Ryan Nystrom on 9/21/12.
 //  Copyright (c) 2012 Ryan Nystrom. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "AFHTTPClient.h"
 
-@interface WeatherKit : NSObject
+@interface WKHTTPClient : AFHTTPClient
 
 @end

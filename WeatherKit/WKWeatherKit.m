@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 Ryan Nystrom. All rights reserved.
 //
 
-#import "WeatherKit.h"
+#import "WKWeatherKit.h"
 
-@implementation WeatherKit
+@implementation WKWeatherKit
 
 @end

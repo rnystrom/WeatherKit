@@ -1,5 +1,5 @@
 //
-//  WeatherKit.h
+//  WKDefines.h
 //  WeatherKit
 //
 //  Created by Ryan Nystrom on 9/21/12.
@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "WKDefines.h"
 
-@interface WKWeatherKit : NSObject
+#define WEATHERBUG_API_KEY @"3a4b34w6uvqju6ama88fwrkc"
 
-@end
+#ifndef WEATHERBUG_API_KEY
+#error "Must define WeatherBug API key"
+#endif

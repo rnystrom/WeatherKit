@@ -18,6 +18,7 @@
 		8648735E160CF13500E11301 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 86487355160CF13500E11301 /* UIImageView+AFNetworking.m */; };
 		8648736B160CF21900E11301 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8648736A160CF21900E11301 /* CoreLocation.framework */; };
 		8648736E160CF2F000E11301 /* WKHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8648736D160CF2F000E11301 /* WKHTTPClient.m */; };
+		86487371160CF53200E11301 /* WKDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 86487370160CF53200E11301 /* WKDefines.m */; };
 		86A8F746160CD21900AB1E6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A8F745160CD21900AB1E6A /* Foundation.framework */; };
 		86A8F74B160CD21900AB1E6A /* WKWeatherKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86A8F74A160CD21900AB1E6A /* WKWeatherKit.h */; };
 		86A8F74D160CD21900AB1E6A /* WKWeatherKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A8F74C160CD21900AB1E6A /* WKWeatherKit.m */; };
@@ -59,6 +60,8 @@
 		8648736A160CF21900E11301 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8648736C160CF2F000E11301 /* WKHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKHTTPClient.h; sourceTree = "<group>"; };
 		8648736D160CF2F000E11301 /* WKHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKHTTPClient.m; sourceTree = "<group>"; };
+		8648736F160CF53200E11301 /* WKDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKDefines.h; sourceTree = "<group>"; };
+		86487370160CF53200E11301 /* WKDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKDefines.m; sourceTree = "<group>"; };
 		86A8F742160CD21900AB1E6A /* libWeatherKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWeatherKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A8F745160CD21900AB1E6A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		86A8F749160CD21900AB1E6A /* WeatherKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WeatherKit-Prefix.pch"; path = "WeatherKit/WeatherKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -156,6 +159,8 @@
 				86A8F74C160CD21900AB1E6A /* WKWeatherKit.m */,
 				8648736C160CF2F000E11301 /* WKHTTPClient.h */,
 				8648736D160CF2F000E11301 /* WKHTTPClient.m */,
+				8648736F160CF53200E11301 /* WKDefines.h */,
+				86487370160CF53200E11301 /* WKDefines.m */,
 			);
 			name = Classes;
 			path = WeatherKit;
@@ -224,6 +229,7 @@
 				8648735D160CF13500E11301 /* AFXMLRequestOperation.m in Sources */,
 				8648735E160CF13500E11301 /* UIImageView+AFNetworking.m in Sources */,
 				8648736E160CF2F000E11301 /* WKHTTPClient.m in Sources */,
+				86487371160CF53200E11301 /* WKDefines.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

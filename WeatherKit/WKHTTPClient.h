@@ -7,7 +7,10 @@
 //
 
 #import "AFHTTPClient.h"
+#import "WKDefines.h"
 
 @interface WKHTTPClient : AFHTTPClient
+
++ (WKHTTPClient*)sharedClient;
 
 @end

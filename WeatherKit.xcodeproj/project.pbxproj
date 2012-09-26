@@ -19,6 +19,12 @@
 		8648736B160CF21900E11301 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8648736A160CF21900E11301 /* CoreLocation.framework */; };
 		8648736E160CF2F000E11301 /* WKHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8648736D160CF2F000E11301 /* WKHTTPClient.m */; };
 		86487371160CF53200E11301 /* WKDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 86487370160CF53200E11301 /* WKDefines.m */; };
+		86487374160CF8B100E11301 /* WKObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 86487373160CF8B100E11301 /* WKObservation.m */; };
+		86487377160CF8E100E11301 /* WKObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 86487376160CF8E100E11301 /* WKObject.m */; };
+		86487379160CF9CC00E11301 /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 86487378160CF9CC00E11301 /* libobjc.A.dylib */; };
+		8648738E160D1C5800E11301 /* WKAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 8648738D160D1C5800E11301 /* WKAddress.m */; };
+		86487390160D20BC00E11301 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8648738F160D20BC00E11301 /* AddressBook.framework */; };
+		86986895160FFA8700E869FE /* NSString+StringContains.m in Sources */ = {isa = PBXBuildFile; fileRef = 86986894160FFA8700E869FE /* NSString+StringContains.m */; };
 		86A8F746160CD21900AB1E6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A8F745160CD21900AB1E6A /* Foundation.framework */; };
 		86A8F74B160CD21900AB1E6A /* WKWeatherKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86A8F74A160CD21900AB1E6A /* WKWeatherKit.h */; };
 		86A8F74D160CD21900AB1E6A /* WKWeatherKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A8F74C160CD21900AB1E6A /* WKWeatherKit.m */; };
@@ -62,6 +68,17 @@
 		8648736D160CF2F000E11301 /* WKHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKHTTPClient.m; sourceTree = "<group>"; };
 		8648736F160CF53200E11301 /* WKDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKDefines.h; sourceTree = "<group>"; };
 		86487370160CF53200E11301 /* WKDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKDefines.m; sourceTree = "<group>"; };
+		86487372160CF8B100E11301 /* WKObservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKObservation.h; sourceTree = "<group>"; };
+		86487373160CF8B100E11301 /* WKObservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKObservation.m; sourceTree = "<group>"; };
+		86487375160CF8E100E11301 /* WKObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKObject.h; sourceTree = "<group>"; };
+		86487376160CF8E100E11301 /* WKObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKObject.m; sourceTree = "<group>"; };
+		86487378160CF9CC00E11301 /* libobjc.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.A.dylib; path = usr/lib/libobjc.A.dylib; sourceTree = SDKROOT; };
+		8648737E160D08A400E11301 /* example.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example.json; sourceTree = "<group>"; };
+		8648738C160D1C5800E11301 /* WKAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKAddress.h; sourceTree = "<group>"; };
+		8648738D160D1C5800E11301 /* WKAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKAddress.m; sourceTree = "<group>"; };
+		8648738F160D20BC00E11301 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		86986893160FFA8700E869FE /* NSString+StringContains.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringContains.h"; sourceTree = "<group>"; };
+		86986894160FFA8700E869FE /* NSString+StringContains.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringContains.m"; sourceTree = "<group>"; };
 		86A8F742160CD21900AB1E6A /* libWeatherKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWeatherKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A8F745160CD21900AB1E6A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		86A8F749160CD21900AB1E6A /* WeatherKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WeatherKit-Prefix.pch"; path = "WeatherKit/WeatherKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -74,6 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86487390160D20BC00E11301 /* AddressBook.framework in Frameworks */,
+				86487379160CF9CC00E11301 /* libobjc.A.dylib in Frameworks */,
 				8648736B160CF21900E11301 /* CoreLocation.framework in Frameworks */,
 				86A8F746160CD21900AB1E6A /* Foundation.framework in Frameworks */,
 			);
@@ -124,6 +143,14 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
+		8648737F160D08B200E11301 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8648737E160D08A400E11301 /* example.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		86A8F737160CD21900AB1E6A = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +158,7 @@
 				86A8F744160CD21900AB1E6A /* Frameworks */,
 				86487369160CF17800E11301 /* Other Sources */,
 				86A8F743160CD21900AB1E6A /* Products */,
+				8648737F160D08B200E11301 /* Resources */,
 				8648735F160CF14700E11301 /* Vendors */,
 			);
 			sourceTree = "<group>";
@@ -146,6 +174,8 @@
 		86A8F744160CD21900AB1E6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8648738F160D20BC00E11301 /* AddressBook.framework */,
+				86487378160CF9CC00E11301 /* libobjc.A.dylib */,
 				8648736A160CF21900E11301 /* CoreLocation.framework */,
 				86A8F745160CD21900AB1E6A /* Foundation.framework */,
 			);
@@ -159,8 +189,16 @@
 				86A8F74C160CD21900AB1E6A /* WKWeatherKit.m */,
 				8648736C160CF2F000E11301 /* WKHTTPClient.h */,
 				8648736D160CF2F000E11301 /* WKHTTPClient.m */,
+				8648738C160D1C5800E11301 /* WKAddress.h */,
+				8648738D160D1C5800E11301 /* WKAddress.m */,
 				8648736F160CF53200E11301 /* WKDefines.h */,
 				86487370160CF53200E11301 /* WKDefines.m */,
+				86487372160CF8B100E11301 /* WKObservation.h */,
+				86487373160CF8B100E11301 /* WKObservation.m */,
+				86487375160CF8E100E11301 /* WKObject.h */,
+				86487376160CF8E100E11301 /* WKObject.m */,
+				86986893160FFA8700E869FE /* NSString+StringContains.h */,
+				86986894160FFA8700E869FE /* NSString+StringContains.m */,
 			);
 			name = Classes;
 			path = WeatherKit;
@@ -230,6 +268,10 @@
 				8648735E160CF13500E11301 /* UIImageView+AFNetworking.m in Sources */,
 				8648736E160CF2F000E11301 /* WKHTTPClient.m in Sources */,
 				86487371160CF53200E11301 /* WKDefines.m in Sources */,
+				86487374160CF8B100E11301 /* WKObservation.m in Sources */,
+				86487377160CF8E100E11301 /* WKObject.m in Sources */,
+				8648738E160D1C5800E11301 /* WKAddress.m in Sources */,
+				86986895160FFA8700E869FE /* NSString+StringContains.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

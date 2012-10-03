@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="WKEViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LqB-7g-ztp">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ygc-un-ePT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Cnj-v0-fcb"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Current Temperature:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UfW-tt-ZXW">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="173" id="xNe-xA-RF8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Current Conditions:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ek9-Mc-ll0">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Today's High:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0T-Sk-NWP">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Today's Low:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3c-BN-5Wy">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EI2-ub-ICi">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="2Mm-Yd-guw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Clear" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVq-v0-prI">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="fai-FA-VRC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fO3-Bj-0Gs">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwZ-SI-SAM">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="wim-oe-S2N">
+                                <color key="color" cocoaTouchSystemColor="darkTextColor"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qwZ-SI-SAM" firstAttribute="baseline" secondItem="G3c-BN-5Wy" secondAttribute="baseline" type="default" id="14X-xH-yqI"/>
+                            <constraint firstItem="wim-oe-S2N" firstAttribute="centerX" secondItem="Cnj-v0-fcb" secondAttribute="centerX" type="default" id="2xq-Y6-qGZ"/>
+                            <constraint firstAttribute="trailing" secondItem="xVq-v0-prI" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="3p5-6N-2NY"/>
+                            <constraint firstAttribute="trailing" secondItem="EI2-ub-ICi" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="7PW-Mp-dW0"/>
+                            <constraint firstItem="qwZ-SI-SAM" firstAttribute="leading" secondItem="fO3-Bj-0Gs" secondAttribute="leading" type="default" id="9Uq-pp-JQy"/>
+                            <constraint firstAttribute="bottom" secondItem="Cnj-v0-fcb" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Grw-jq-NWm"/>
+                            <constraint firstItem="Ek9-Mc-ll0" firstAttribute="top" secondItem="UfW-tt-ZXW" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="I6o-mE-LZP"/>
+                            <constraint firstItem="G3c-BN-5Wy" firstAttribute="top" secondItem="K0T-Sk-NWP" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="IXS-k2-chs"/>
+                            <constraint firstItem="fO3-Bj-0Gs" firstAttribute="leading" secondItem="EI2-ub-ICi" secondAttribute="leading" type="default" id="Lm2-j9-qdx"/>
+                            <constraint firstItem="K0T-Sk-NWP" firstAttribute="top" secondItem="Ek9-Mc-ll0" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Ou7-bH-YNl"/>
+                            <constraint firstAttribute="trailing" secondItem="qwZ-SI-SAM" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="R2s-Nx-aiV"/>
+                            <constraint firstItem="fO3-Bj-0Gs" firstAttribute="baseline" secondItem="K0T-Sk-NWP" secondAttribute="baseline" type="default" id="R3f-hy-EC7"/>
+                            <constraint firstItem="K0T-Sk-NWP" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="SnD-8C-1l2"/>
+                            <constraint firstItem="xVq-v0-prI" firstAttribute="baseline" secondItem="Ek9-Mc-ll0" secondAttribute="baseline" type="default" id="W68-kX-SQF"/>
+                            <constraint firstItem="UfW-tt-ZXW" firstAttribute="top" secondItem="3" secondAttribute="top" constant="78" id="Xzn-uh-qTX"/>
+                            <constraint firstItem="Ek9-Mc-ll0" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="YIo-Gc-0uU"/>
+                            <constraint firstAttribute="trailing" secondItem="fO3-Bj-0Gs" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="cze-EH-Mzf"/>
+                            <constraint firstAttribute="trailing" secondItem="Cnj-v0-fcb" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="gMI-8D-AUk"/>
+                            <constraint firstItem="EI2-ub-ICi" firstAttribute="baseline" secondItem="UfW-tt-ZXW" secondAttribute="baseline" type="default" id="jJL-Vc-xe7"/>
+                            <constraint firstItem="wim-oe-S2N" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" type="default" id="keg-iR-wnN"/>
+                            <constraint firstItem="G3c-BN-5Wy" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="lmw-xM-bl3"/>
+                            <constraint firstAttribute="trailing" secondItem="LqB-7g-ztp" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="nVd-Jd-Axe"/>
+                            <constraint firstItem="K0T-Sk-NWP" firstAttribute="trailing" secondItem="Ek9-Mc-ll0" secondAttribute="trailing" type="default" id="nao-sn-xZp"/>
+                            <constraint firstItem="LqB-7g-ztp" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="p75-VU-qWk"/>
+                            <constraint firstItem="G3c-BN-5Wy" firstAttribute="trailing" secondItem="K0T-Sk-NWP" secondAttribute="trailing" type="default" id="q2B-ce-c4X"/>
+                            <constraint firstItem="LqB-7g-ztp" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="tgi-E4-rsG"/>
+                            <constraint firstItem="Ek9-Mc-ll0" firstAttribute="trailing" secondItem="UfW-tt-ZXW" secondAttribute="trailing" type="default" id="u7t-au-Xer"/>
+                            <constraint firstItem="UfW-tt-ZXW" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="wKH-vs-d4A"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="wim-oe-S2N" id="c0L-oT-y24"/>
+                        <outlet property="conditionLabel" destination="xVq-v0-prI" id="euf-eE-Bes"/>
+                        <outlet property="hiLabel" destination="fO3-Bj-0Gs" id="A97-To-U5a"/>
+                        <outlet property="loLabel" destination="qwZ-SI-SAM" id="lwn-vf-i4t"/>
+                        <outlet property="locationLabel" destination="LqB-7g-ztp" id="gfa-sz-ZmG"/>
+                        <outlet property="tempLabel" destination="EI2-ub-ICi" id="TvA-Er-5il"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="281" height="105"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="WKEViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WKEViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="hiLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="loLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="locationLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tempLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

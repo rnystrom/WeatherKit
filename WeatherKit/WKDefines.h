@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-// #define WEATHERBUG_API_KEY @"your_weatherbug_api_key"
+//#define WEATHERBUG_API_KEY @"YOUR_KEY_GOES_HERE"
 
 #ifndef WEATHERBUG_API_KEY
 #error "Must define WeatherBug API key"

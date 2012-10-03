@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 Ryan Nystrom. All rights reserved.
 //
 
-#import "WKWeatherKit.h"
+#import "WeatherKit.h"
 
-@implementation WKWeatherKit {
+@implementation WeatherKit {
     CLLocationManager *_locationManager;
     BOOL _firstLocationUpdate;
     BOOL _hasUpdateLocation;
@@ -75,9 +75,14 @@
     [self.currentAddress loadAddressForLocation:currentLocation];
     [self.currentObservation loadWeatherForLocation:currentLocation completion:^(NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
+        if (self.currentAddress.isLoaded) {
             if (_completion) {
                 _completion(error);
             }
+        }
+        else {
+            [self.currentAddress addObserver:self forKeyPath:@"isLoaded" options:NSKeyValueObservingOptionNew context:NULL];
+        }
         });
     }];
 }
@@ -103,10 +108,19 @@
         _completion = [completion copy];
     }
     
-    // save previous observation in case we want to do comparisons
-//    self.previousObservation = [self.currentObservation copy];
-    
     [self getLocation];
+}
+
+
+#pragma mark - KVO
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    if (object == self.currentAddress &&
+        [keyPath isEqualToString:@"isLoaded"] &&
+        self.currentAddress.isLoaded &&
+        _completion) {
+        _completion(nil);
+    }
 }
 
 

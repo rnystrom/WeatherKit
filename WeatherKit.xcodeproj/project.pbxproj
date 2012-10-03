@@ -26,8 +26,8 @@
 		86487390160D20BC00E11301 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8648738F160D20BC00E11301 /* AddressBook.framework */; };
 		86986895160FFA8700E869FE /* NSString+StringContains.m in Sources */ = {isa = PBXBuildFile; fileRef = 86986894160FFA8700E869FE /* NSString+StringContains.m */; };
 		86A8F746160CD21900AB1E6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A8F745160CD21900AB1E6A /* Foundation.framework */; };
-		86A8F74B160CD21900AB1E6A /* WKWeatherKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86A8F74A160CD21900AB1E6A /* WKWeatherKit.h */; };
-		86A8F74D160CD21900AB1E6A /* WKWeatherKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A8F74C160CD21900AB1E6A /* WKWeatherKit.m */; };
+		86A8F74B160CD21900AB1E6A /* WeatherKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 86A8F74A160CD21900AB1E6A /* WeatherKit.h */; };
+		86A8F74D160CD21900AB1E6A /* WeatherKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A8F74C160CD21900AB1E6A /* WeatherKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,7 +37,7 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				86A8F74B160CD21900AB1E6A /* WKWeatherKit.h in CopyFiles */,
+				86A8F74B160CD21900AB1E6A /* WeatherKit.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,8 +82,8 @@
 		86A8F742160CD21900AB1E6A /* libWeatherKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWeatherKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A8F745160CD21900AB1E6A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		86A8F749160CD21900AB1E6A /* WeatherKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WeatherKit-Prefix.pch"; path = "WeatherKit/WeatherKit-Prefix.pch"; sourceTree = "<group>"; };
-		86A8F74A160CD21900AB1E6A /* WKWeatherKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWeatherKit.h; sourceTree = "<group>"; };
-		86A8F74C160CD21900AB1E6A /* WKWeatherKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWeatherKit.m; sourceTree = "<group>"; };
+		86A8F74A160CD21900AB1E6A /* WeatherKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherKit.h; sourceTree = "<group>"; };
+		86A8F74C160CD21900AB1E6A /* WeatherKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,8 +185,8 @@
 		86A8F747160CD21900AB1E6A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				86A8F74A160CD21900AB1E6A /* WKWeatherKit.h */,
-				86A8F74C160CD21900AB1E6A /* WKWeatherKit.m */,
+				86A8F74A160CD21900AB1E6A /* WeatherKit.h */,
+				86A8F74C160CD21900AB1E6A /* WeatherKit.m */,
 				8648736C160CF2F000E11301 /* WKHTTPClient.h */,
 				8648736D160CF2F000E11301 /* WKHTTPClient.m */,
 				8648738C160D1C5800E11301 /* WKAddress.h */,
@@ -256,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86A8F74D160CD21900AB1E6A /* WKWeatherKit.m in Sources */,
+				86A8F74D160CD21900AB1E6A /* WeatherKit.m in Sources */,
 				86487356160CF13500E11301 /* AFHTTPClient.m in Sources */,
 				86487357160CF13500E11301 /* AFHTTPRequestOperation.m in Sources */,
 				86487358160CF13500E11301 /* AFImageRequestOperation.m in Sources */,

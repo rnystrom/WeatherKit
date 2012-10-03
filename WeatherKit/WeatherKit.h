@@ -14,7 +14,7 @@
 
 typedef void (^weatherKitCompletion) (NSError*);
 
-@interface WKWeatherKit : NSObject
+@interface WeatherKit : NSObject
 <CLLocationManagerDelegate>
 
 @property (strong, nonatomic) CLLocation *currentLocation;

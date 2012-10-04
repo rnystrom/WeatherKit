@@ -40,7 +40,7 @@ The <code>WeatherKit</code> object is the main object you will likely be using. 
 @property (strong, nonatomic) WKAddress *currentAddress;
 @property (strong, nonatomic) WKObservation *currentObservation;
 
-- (void)reloadWithCompletion:(weatherKitCompletion)completion;
+- (void)reloadWithCompletion:(void (^)(NSError*))completion;
 ```
 
 ### Conditions
@@ -83,6 +83,32 @@ There are 2 values for temperature, high temp, and low temp: raw and locale'd. T
 ### WKObservation
 
 The property *currentObservation* on <code>WeatherKit</code> objects is of class <code>WKObservation</code>. If all you are dealing with is the user's current weather then you shouldn't ever have to deal with creating new <code>WKObservations</code>s. However, if you find yourself wanting to load observations for other <code>CLLocations</code> (you need the lat/lon to make a request).
+
+## KVO & Notifications
+
+Most of the classes included have properties to trigger KVO events:
+
+``` objective-c
+@property (assign, nonatomic) BOOL isLoaded;
+@property (assign, nonatomic) BOOL isLoading; // not always included
+```
+
+There are also <code>NSNotifications</code> that are sent when locations, addresses, and observations are loaded.
+
+``` objective-c
+NSString * const kWKLocationUpdateSuccessNotification;
+NSString * const kWKLocationUpdateErrorNotification;
+NSString * const kWKAddressUpdateErrorNotification;
+NSString * const kWKCurrentObservationSuccessNotification;
+NSString * const kWKCurrentObservationErrorNotification;
+```
+
+If you are catching an error via <code>NSNotifications</code>, you can access the error in the userInfo dictionary with the following keys:
+
+``` objective-c
+NSString * const kWKLocationErrorKey;
+NSString * const kWKObservationErrorKey;
+```
 
 ## Vendors
 

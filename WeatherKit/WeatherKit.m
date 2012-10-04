@@ -103,7 +103,7 @@
 // location updated         -> set current location
 // current location set     -> load address, load weather for location
 // weather loaded           -> fire completion block
-- (void)reloadWithCompletion:(weatherKitCompletion)completion {
+- (void)reloadWithCompletion:(void (^)(NSError*))completion {
     if (completion) {
         _completion = [completion copy];
     }

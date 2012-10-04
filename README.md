@@ -1,7 +1,7 @@
 WeatherKit
 =========
 
-WeatherKit is a simple and elegant solution to obtaining local weather information via the [WeatherBug API](http://weather.weatherbug.com/desktop-weather/api.html). WeatherKit is built as a static library. Installation is as simple as dragging and dropping into your project.
+WeatherKit is a simple and elegant solution to obtaining local weather information via the [WeatherBug API](http://weather.weatherbug.com/desktop-weather/api.html). WeatherKit is built as a static library. Installation is as simple as dragging and dropping into your project. Using this project is even easier.
 
 ## Installation
 
@@ -78,7 +78,7 @@ These <code>typedefs</code> are also used for <code>NSString</code> representati
 
 ### Temperatures
 
-There are 2 values for temperature, high temp, and low temp: raw and locale'd. The raw temperature is what is returned from WeatherBug which is always fahrenheit. The locale'd temperature checks the <code>NSLocale</code> of the user's device and returns the converted fahrenheit or celsius temperature. Using this project is even easier.
+There are 2 values for temperature, high temp, and low temp: raw and locale'd. The raw temperature is what is returned from WeatherBug which is always fahrenheit. The locale'd temperature checks the <code>NSLocale</code> of the user's device and returns the converted fahrenheit or celsius temperature.
 
 ### WKObservation
 

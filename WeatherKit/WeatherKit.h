@@ -20,7 +20,6 @@ typedef void (^weatherKitCompletion) (NSError*);
 @property (strong, nonatomic) CLLocation *currentLocation;
 @property (strong, nonatomic) WKAddress *currentAddress;
 @property (strong, nonatomic) WKObservation *currentObservation;
-//@property (strong, nonatomic) WKObservation *previousObservation;
 
 - (void)reloadWithCompletion:(weatherKitCompletion)completion;
 

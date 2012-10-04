@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86350A05161CFBA300EBEE5C /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86350A04161CFBA300EBEE5C /* AddressBook.framework */; };
+		86350A07161CFBA800EBEE5C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86350A06161CFBA800EBEE5C /* CoreLocation.framework */; };
 		86974CEB161CE1A4006D56A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86974CEA161CE1A4006D56A2 /* UIKit.framework */; };
 		86974CED161CE1A4006D56A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86974CEC161CE1A4006D56A2 /* Foundation.framework */; };
 		86974CEF161CE1A4006D56A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86974CEE161CE1A4006D56A2 /* CoreGraphics.framework */; };
@@ -20,8 +22,6 @@
 		86974D07161CE1A4006D56A2 /* WKEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86974D06161CE1A4006D56A2 /* WKEViewController.m */; };
 		86974D3B161CE3E1006D56A2 /* logo in Resources */ = {isa = PBXBuildFile; fileRef = 86974D3A161CE3E1006D56A2 /* logo */; };
 		86974D5D161CE879006D56A2 /* libWeatherKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86974D4E161CE7B9006D56A2 /* libWeatherKit.a */; };
-		86974D5F161CE887006D56A2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86974D5E161CE887006D56A2 /* CoreLocation.framework */; };
-		86974D61161CE893006D56A2 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86974D60161CE893006D56A2 /* AddressBook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		86350A04161CFBA300EBEE5C /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		86350A06161CFBA800EBEE5C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		86974CE6161CE1A4006D56A2 /* WeatherKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86974CEA161CE1A4006D56A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		86974CEC161CE1A4006D56A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,8 +62,6 @@
 		86974D06161CE1A4006D56A2 /* WKEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKEViewController.m; sourceTree = "<group>"; };
 		86974D3A161CE3E1006D56A2 /* logo */ = {isa = PBXFileReference; lastKnownFileType = file; name = logo; path = WeatherKitExample/logo; sourceTree = "<group>"; };
 		86974D46161CE7B9006D56A2 /* WeatherKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WeatherKit.xcodeproj; path = WeatherKit/WeatherKit.xcodeproj; sourceTree = "<group>"; };
-		86974D5E161CE887006D56A2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		86974D60161CE893006D56A2 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86974D61161CE893006D56A2 /* AddressBook.framework in Frameworks */,
-				86974D5F161CE887006D56A2 /* CoreLocation.framework in Frameworks */,
+				86350A07161CFBA800EBEE5C /* CoreLocation.framework in Frameworks */,
+				86350A05161CFBA300EBEE5C /* AddressBook.framework in Frameworks */,
 				86974D5D161CE879006D56A2 /* libWeatherKit.a in Frameworks */,
 				86974CEB161CE1A4006D56A2 /* UIKit.framework in Frameworks */,
 				86974CED161CE1A4006D56A2 /* Foundation.framework in Frameworks */,
@@ -84,8 +84,8 @@
 		86974CDB161CE1A4006D56A2 = {
 			isa = PBXGroup;
 			children = (
-				86974D60161CE893006D56A2 /* AddressBook.framework */,
-				86974D5E161CE887006D56A2 /* CoreLocation.framework */,
+				86350A06161CFBA800EBEE5C /* CoreLocation.framework */,
+				86350A04161CFBA300EBEE5C /* AddressBook.framework */,
 				86974D46161CE7B9006D56A2 /* WeatherKit.xcodeproj */,
 				86974D3A161CE3E1006D56A2 /* logo */,
 				86974CF0161CE1A4006D56A2 /* WeatherKitExample */,

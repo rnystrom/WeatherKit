@@ -79,6 +79,16 @@ These <code>typedefs</code> are also used for <code>NSString</code> representati
 
 There are 2 values for temperature, high temp, and low temp: raw and locale'd. The raw temperature is what is returned from WeatherBug which is always fahrenheit. The locale'd temperature checks the <code>NSLocale</code> of the user's device and returns the converted fahrenheit or celsius temperature.
 
+``` objective-c
+@property (strong, nonatomic) NSNumber *temperature;
+@property (strong, nonatomic) NSNumber *temperatureHigh;
+@property (strong, nonatomic) NSNumber *temperatureLow;
+
+- (NSNumber*)localTemperature;
+- (NSNumber*)localTemperatureHigh;
+- (NSNumber*)localTemperatureLow;
+```
+
 ### WKObservation
 
 The property *currentObservation* on <code>WeatherKit</code> objects is of class <code>WKObservation</code>. If all you are dealing with is the user's current weather then you shouldn't ever have to deal with creating new <code>WKObservations</code>s. However, if you find yourself wanting to load observations for other <code>CLLocations</code> (you need the lat/lon to make a request).
